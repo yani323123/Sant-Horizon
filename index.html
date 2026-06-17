@@ -3,76 +3,177 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Santé & Bien-être</title>
+<title>Sant-Horizon</title>
+
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f7f8;
-    margin: 0;
-    padding: 0;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
-header {
-    background: #2e7d32;
-    color: white;
-    text-align: center;
-    padding: 20px;
+body{
+background:#f4f6f7;
+color:#222;
 }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
+header{
+background:#14532d;
+color:white;
+padding:20px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-button {
-    background: #2e7d32;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(to right,#14532d,#1f7a43);
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:white;
+color:#14532d;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.section{
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#14532d;
+}
+
+footer{
+background:#14532d;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
 }
 </style>
+
 </head>
 <body>
 
 <header>
-    <h1>Santé & Bien-être</h1>
-    <p>Informations générales sur la santé et le bien-être</p>
+<nav>
+<div class="logo">Sant-Horizon</div>
+
+<ul>
+<li><a href="#">Accueil</a></li>
+<li><a href="#">Bien-être</a></li>
+<li><a href="#">Produits</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
 </header>
 
-<div class="container">
+<section class="hero">
+<h1>Bienvenue sur Sant-Horizon</h1>
+<p>
+Découvrez des conseils de bien-être, de prévention santé et des ressources utiles pour prendre soin de vous au quotidien.
+</p>
 
-    <div class="card">
-        <h2>Prévention</h2>
-        <p>Conseils de base pour maintenir une bonne santé.</p>
-    </div>
+<a class="btn" href="#">Découvrir</a>
+</section>
 
-    <div class="card">
-        <h2>Produits recommandés</h2>
-        <ul>
-            <li>Thermomètre</li>
-            <li>Tensiomètre</li>
-            <li>Trousse de premiers secours</li>
-        </ul>
-    </div>
+<section class="section">
 
-    <div class="card">
-        <h2>Partenariats</h2>
-        <p>Contactez-nous pour discuter d'une collaboration.</p>
-        <button>Nous contacter</button>
-    </div>
+<h2>Nos thématiques</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Bien-être</h3>
+<p>Conseils pour améliorer votre quotidien et votre confort.</p>
+</div>
+
+<div class="card">
+<h3>Prévention</h3>
+<p>Informations générales pour adopter de bonnes habitudes.</p>
+</div>
+
+<div class="card">
+<h3>Produits utiles</h3>
+<p>Sélection de produits liés au bien-être et à la santé.</p>
+</div>
 
 </div>
+
+</section>
+
+<section class="section">
+
+<h2>Notre mission</h2>
+
+<p style="margin-top:20px;font-size:18px;line-height:1.8;">
+Sant-Horizon a pour objectif de partager des informations générales sur le bien-être, la prévention et les bonnes pratiques de santé. Les informations présentes sur ce site ne remplacent pas l'avis d'un professionnel de santé.
+</p>
+
+</section>
+
+<footer>
+© 2026 Sant-Horizon - Tous droits réservés
+</footer>
 
 </body>
 </html>
